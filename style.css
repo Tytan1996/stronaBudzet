@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(168, 166, 166);
+}
+.link{
+    min-width: 300px;
+    min-height: 30px;
+    border: 2px solid black;
+    display: inline-block;
+    text-align: center;
+}
+#rejestracja{
+    background-color: rgb(238, 238, 153);
+}
+#logowanie{
+    background-color: rgb(141, 236, 141);
+}
+a .link{
+    color: rgb(17, 17, 255);
+    text-decoration: none;
+    font-weight: bolder;
+}
