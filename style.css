@@ -14,8 +14,8 @@ body{
 #logowanie{
     background-color: rgb(141, 236, 141);
 }
-a .link{
-    color: rgb(17, 17, 255);
+.nav-link{
+    color: white !important;
     text-decoration: none;
     font-weight: bolder;
 }
