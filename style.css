@@ -19,3 +19,66 @@ body{
     text-decoration: none;
     font-weight: bolder;
 }
+main{
+    background-color: #dbd3d3;
+    min-height: 500px;
+}
+/*.tabBilans{
+    color: #1f1a1a;
+    padding: 2px;
+}
+.tabBilans table{
+    border: 2px black solid;
+    border-radius: 50%;
+}
+.tabBilans table td{
+    border: 1px black solid;
+}*/
+.dropbtn {
+    background-color: #20493a;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bbb7b7;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(255, 255, 255);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #30725a;}
+
+footer{
+    text-align: center;
+    background-color: #5e5858;
+    color: lightcoral;
+}
+label {
+    min-width: 150px;
+    display: inline-block;
+    margin-top: 
+}
+form{
+    margin-left: 15px;
+}

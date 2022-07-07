@@ -66,7 +66,7 @@
         <header>
             
             <nav class="navbar navbar-light bg-primary navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainmenu">
@@ -78,7 +78,7 @@
                             <a class="nav-link" href="dodajWydatek.html">Dodaj wydatek</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="dodajDochod.html">Dodaj dochód</a>
+                            <a class="nav-link" href="#">Dodaj dochód</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="bilans.html">Zobacz bilans</a>
@@ -95,159 +95,163 @@
             </nav>
         </header>
         <main>
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
-                <div class="dropdown-content">
-                  <a href="#">bieżący miesiąc</a>
-                  <a href="#">poprzedni miesiąc</a>
-                  <a href="#">bieżący rok</a>
-                  <a href="#">niestandardowy</a>
+            <div class="row">
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                    <a href="#">bieżący miesiąc</a>
+                    <a href="#">poprzedni miesiąc</a>
+                    <a href="#">bieżący rok</a>
+                    <a href="#">niestandardowy</a>
+                    </div>
                 </div>
-              </div>
-              <br>
-            <table id="tableWydatek">
-            <tr><th>
-            Wydadak:
-            </th></tr>
-            <tr>
-            <td>
-                Jedzienie:
-            </td>
-            <td class="PLN">
-                100 PLN
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Mieszkanie:
-            </td>
-            <td class="PLN">
-                150 PLN
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Transport:
-            </td>
-            <td class="PLN">
-                200 PLM
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Telekomunikacja:
-            </td>
-            <td class="PLN">
-                250 PLN
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Opieka zdrowotna:
-            </td>
-            <td class="PLN">
-                300 PLN
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Ubranie:
-            </td>
-            <td class="PLN">
-                350 PLN
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Higienia:
-            </td>
-            <td class="PLN">
-                400 PLN
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Dzieci:
-            </td>
-            <td class="PLN">
-                500 PLN
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Rozrywka:
-            </td>
-            <td class="PLN">
-                100 PLN
-            </td>
-            </tr>
-            <tr>
-            <td>
-                Wycieczka:
-            </td>
-            <td class="PLN">
-                200 PLN
-            </td>
-            </tr>
-            <tr>
-                <td>
-                    Suma:
-                </td>
-                <td class="PLN">
-                    205 PLM
-                </td>
-            </tr>
-            </table>
-            <table id="tablePrzychod">
-                <tr><th>
-                Przychod:
-                </th></tr>
-                <tr>
-                <td>
-                    Wynagrodzenie:
-                </td>
-                <td class="PLN">
-                    1700 PLN
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    Odsetki bankowe:
-                </td>
-                <td class="PLN">
-                    150 PLN
-                </td>
-                </tr>
-                <tr>
-                <td>
-                    Spredaż na allegro:
-                </td>
-                <td class="PLN">
-                    200 PLM
-                </td>
-                </tr>
-                <tr>
-                    <td>
-                        Inne:
-                    </td>
-                    <td class="PLN">
-                        205 PLM
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Suma:
-                    </td>
-                    <td class="PLN">
-                        205 PLM
-                    </td>
-                </tr>
-                </table><div class="endfloat"></div>
-                <br>
+                    <div class="tabBilans col-sm-6">
+                        <table class="table table-dark table-striped">
+                        <tr><th>
+                        Wydadak:
+                        </th></tr>
+                        <tr>
+                        <td>
+                            Jedzienie:
+                        </td>
+                        <td class="PLN">
+                            100 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Mieszkanie:
+                        </td>
+                        <td class="PLN">
+                            150 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Transport:
+                        </td>
+                        <td class="PLN">
+                            200 PLM
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Telekomunikacja:
+                        </td>
+                        <td class="PLN">
+                            250 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Opieka zdrowotna:
+                        </td>
+                        <td class="PLN">
+                            300 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Ubranie:
+                        </td>
+                        <td class="PLN">
+                            350 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Higienia:
+                        </td>
+                        <td class="PLN">
+                            400 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Dzieci:
+                        </td>
+                        <td class="PLN">
+                            500 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Rozrywka:
+                        </td>
+                        <td class="PLN">
+                            100 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            Wycieczka:
+                        </td>
+                        <td class="PLN">
+                            200 PLN
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Suma:
+                            </td>
+                            <td class="PLN">
+                                205 PLM
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <div class="tabBilans col-sm-6">
+                        <table id="tablePrzychod">
+                            <tr><th>
+                            Przychod:
+                            </th></tr>
+                            <tr>
+                            <td>
+                                Wynagrodzenie:
+                            </td>
+                            <td class="PLN">
+                                1700 PLN
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                Odsetki bankowe:
+                            </td>
+                            <td class="PLN">
+                                150 PLN
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                Spredaż na allegro:
+                            </td>
+                            <td class="PLN">
+                                200 PLM
+                            </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Inne:
+                                </td>
+                                <td class="PLN">
+                                    205 PLM
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Suma:
+                                </td>
+                                <td class="PLN">
+                                    205 PLM
+                             </td>
+                        </tr>
+                        
+                    </table><div class="endfloat"></div>
+                </div>
                 <div class="wykres" id="piechart1" style="width: 45%; height: 475px;"></div>
                 <div class="wykres" id="piechart" style="width: 45%; height: 475px; "></div>
-
-
+                
+            </div>
         </main>
         <footer>
 
