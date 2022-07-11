@@ -15,7 +15,7 @@
         <header>
             
             <nav class="navbar navbar-light bg-primary navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mainmenu">
@@ -27,7 +27,7 @@
                             <a class="nav-link" href="dodajWydatek.html">Dodaj wydatek</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="dodajDochod.html">Dodaj dochód</a>
+                            <a class="nav-link" href="#">Dodaj dochód</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="bilans.html">Zobacz bilans</a>
@@ -45,57 +45,66 @@
         </header>
         <main>
             <form auction="dodajWydatek.php">
-                Kwota: 
-                <input type="text"> <br>
-                Data:
-                <input type="text" value="01-05-2022"><br>
-                Sposób płatności <br>
-                <input type="radio" id="gotowka" name="sposobPlatnosci" value="gotowka">
-                <label for="gotowka">Gotówka</label>
-                <input type="radio" id="kartaDebetowa" name="sposobPlatnosci" value="kartaDebetowa">
-                <label for="kartaDebetowa">Karta debetowa</label>
-                <input type="radio" id="kartaKredytowa" name="sposobPlatnosci" value="kartaKredytowa">
-                <label for="kartaKredytowa">Karta kredytowa</label>
-                <br>Kategorie: <br>
-                <input type="radio" id="jedzienie" name="Kategorie" value="jedzienie">
-                <label for="jedzienie">Jedzienie</label>
-                <input type="radio" id="mieszkanie" name="Kategorie" value="mieszkanie">
-                <label for="mieszkanie">Mieszkanie</label>
-                <input type="radio" id="transport" name="Kategorie" value="transport">
-                <label for="transport">Transport</label>
-                <input type="radio" id="telekomunikacja" name="Kategorie" value="telekomunikacja">
-                <label for="telekomunikacja">Telekomunikacja</label><br>
-                <input type="radio" id="opiekaZdrowotna" name="Kategorie" value="opiekaZdrowotna">
-                <label for="opiekaZdrowotna">Opieka zdrowotna</label>
-                <input type="radio" id="ubranie" name="Kategorie" value="ubranie">
-                <label for="ubranie">Ubranie</label>
-                <input type="radio" id="higienia" name="Kategorie" value="higienia">
-                <label for="higienia">Higienia</label>
-                <input type="radio" id="dzieci" name="Kategorie" value="dzieci">
-                <label for="dzieci">Dzieci</label><br>
-                <input type="radio" id="rozrywka" name="Kategorie" value="rozrywka">
-                <label for="rozrywka">Rozrywka</label>
-                <input type="radio" id="wycieczka" name="Kategorie" value="wycieczka">
-                <label for="wycieczka">Wycieczka</label>
-                <input type="radio" id="szkolenie" name="Kategorie" value="szkolenie">
-                <label for="szkolenie">Szkolenie</label>
-                <input type="radio" id="ksiazki" name="Kategorie" value="ksiazki">
-                <label for="ksiazki">Książki</label><br>
-                <input type="radio" id="oszczednosci" name="Kategorie" value="oszczednosci">
-                <label for="oszczednosci">Oszczędności</label>
-                <input type="radio" id="emerytura" name="Kategorie" value="emerytura">
-                <label for="emerytura">Na złotą jesień, czyli emeryturę</label><br>
-                <input type="radio" id="dlugi" name="Kategorie" value="dlugi">
-                <label for="dlugi">Spłata długów</label>
-                <input type="radio" id="darowizna" name="Kategorie" value="darowizna">
-                <label for="darowizna">Darowizna</label>
-                <input type="radio" id="inne" name="Kategorie" value="inne">
-                <label for="inne">Inne wydatki</label>
-                <br>Komentarz (opcjonalnie):<br>
-                <input type="text">
-                <br>
-                <input type="submit" value="Dodaj">
-                <input type="submit" value="Anuluj">
+                <section>
+                    <label for="nazwa">Nazwa wydatku</label>
+                    <input type="text" id="nazwa"> 
+                </section>
+                <section></section>
+                    <label for="data">Data</label>
+                    <input type="text" value="01-05-2022" class="data">
+                </section>
+                <section>
+                    Sposób płatności <br>
+                    <input type="radio" id="gotowka" name="sposobPlatnosci" value="gotowka">
+                    <label for="gotowka">Gotówka</label>
+                    <input type="radio" id="kartaDebetowa" name="sposobPlatnosci" value="kartaDebetowa">
+                    <label for="kartaDebetowa">Karta debetowa</label>
+                    <input type="radio" id="kartaKredytowa" name="sposobPlatnosci" value="kartaKredytowa">
+                    <label for="kartaKredytowa">Karta kredytowa</label>
+                </section>
+                <section>
+                    <br>Kategorie: <br>
+                    <input type="radio" id="jedzienie" name="Kategorie" value="jedzienie">
+                    <label for="jedzienie">Jedzienie</label>
+                    <input type="radio" id="mieszkanie" name="Kategorie" value="mieszkanie">
+                    <label for="mieszkanie">Mieszkanie</label>
+                    <input type="radio" id="transport" name="Kategorie" value="transport">
+                    <label for="transport">Transport</label>
+                    <input type="radio" id="telekomunikacja" name="Kategorie" value="telekomunikacja">
+                    <label for="telekomunikacja">Telekomunikacja</label><br>
+                    <input type="radio" id="opiekaZdrowotna" name="Kategorie" value="opiekaZdrowotna">
+                    <label for="opiekaZdrowotna">Opieka zdrowotna</label>
+                    <input type="radio" id="ubranie" name="Kategorie" value="ubranie">
+                    <label for="ubranie">Ubranie</label>
+                    <input type="radio" id="higienia" name="Kategorie" value="higienia">
+                    <label for="higienia">Higienia</label>
+                    <input type="radio" id="dzieci" name="Kategorie" value="dzieci">
+                    <label for="dzieci">Dzieci</label><br>
+                    <input type="radio" id="rozrywka" name="Kategorie" value="rozrywka">
+                    <label for="rozrywka">Rozrywka</label>
+                    <input type="radio" id="wycieczka" name="Kategorie" value="wycieczka">
+                    <label for="wycieczka">Wycieczka</label>
+                    <input type="radio" id="szkolenie" name="Kategorie" value="szkolenie">
+                    <label for="szkolenie">Szkolenie</label>
+                    <input type="radio" id="ksiazki" name="Kategorie" value="ksiazki">
+                    <label for="ksiazki">Książki</label><br>
+                    <input type="radio" id="oszczednosci" name="Kategorie" value="oszczednosci">
+                    <label for="oszczednosci">Oszczędności</label>
+                    <input type="radio" id="emerytura" name="Kategorie" value="emerytura">
+                    <label for="emerytura">Na złotą jesień, czyli emeryturę</label><br>
+                    <input type="radio" id="dlugi" name="Kategorie" value="dlugi">
+                    <label for="dlugi">Spłata długów</label>
+                    <input type="radio" id="darowizna" name="Kategorie" value="darowizna">
+                    <label for="darowizna">Darowizna</label>
+                    <input type="radio" id="inne" name="Kategorie" value="inne">
+                    <label for="inne">Inne wydatki</label>
+                </section>
+                <section>
+                    <label for="komentarz">Komentarz (opcjonalnie):</label>
+                    <input type="text">
+                </section>
+                <button type="button" class="btn btn-primary">Dodaj wydatek</button>
+                    <button type="button" class="btn btn-primary">Anuluj</button>
             </form>
         </main>
         <footer>
