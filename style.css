@@ -23,7 +23,7 @@ main{
     background-color: #dbd3d3;
     min-height: 500px;
 }
-/*.tabBilans{
+.tabBilans{
     color: #1f1a1a;
     padding: 2px;
 }
@@ -33,7 +33,10 @@ main{
 }
 .tabBilans table td{
     border: 1px black solid;
-}*/
+    width: 250px;
+    padding: 10px;
+    margin-left: 100px;
+}
 .dropbtn {
     background-color: #20493a;
     color: white;
