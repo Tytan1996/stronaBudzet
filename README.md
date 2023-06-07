@@ -1,0 +1,1 @@
+Strona nie jest ukończona
